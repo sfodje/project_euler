@@ -60,11 +60,13 @@ func firstDigit(n int64) int {
 }
 
 func numOfDigits(n int64) int {
-	if n < 0 {
+	switch {
+	case n < 0:
 		n *= -1
-	}
-	if n < 10 {
+		return int(math.Floor(math.Log10(float64(n)) + 1))
+	case n < 10:
 		return 1
+	default:
+		return int(math.Floor(math.Log10(float64(n)) + 1))
 	}
-	return int(math.Floor(math.Log10(float64(n)) + 1))
 }

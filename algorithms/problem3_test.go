@@ -5,7 +5,7 @@ import (
 )
 
 func TestLargestPrimeFactor(t *testing.T) {
-	testData := make(map[int64]int64)
+	testData := make(map[int]int)
 	testData[0] = 0
 	testData[1] = 0
 	testData[2] = 2
@@ -24,7 +24,7 @@ func TestLargestPrimeFactor(t *testing.T) {
 
 func TestIsPrime(t *testing.T) {
 	testData := []struct {
-		n              int64
+		n              int
 		expectedResult bool
 	}{
 		{0, false},

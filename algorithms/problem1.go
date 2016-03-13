@@ -2,13 +2,14 @@ package algorithms
 
 func SumOfMultiplesOf3And5(n int) int {
 	n -= 1
-	if n < 0 {
+	switch {
+	case n < 0:
 		return 0
-	}
-	if n%3 == 0 || n%5 == 0 {
+	case n%3 == 0 || n%5 == 0:
 		return n + SumOfMultiplesOf3And5(n)
+	default:
+		return SumOfMultiplesOf3And5(n)
 	}
-	return 0 + SumOfMultiplesOf3And5(n)
 }
 
 func SumOfMultiplesOf3And5Iterative(n int) int {
