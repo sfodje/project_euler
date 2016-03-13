@@ -13,6 +13,7 @@ func main() {
 	fmt.Printf("Problem 4: Largest Palindrome From the Product of Two 3-Digit Numbers = %d\n", LargestPalidromeProduct(3))
 	multiple, _ := SmallestMultiple(1, 20)
 	fmt.Printf("Problem 5: Smallest Positive Number Evenly Divisible By All Numbers From 1 to 20 = %d\n", multiple)
-	fmt.Printf("Problem 6: Difference Between Square Of Sum And Sum Of Squares From 1 to 100 = %d\n", SumSquareDifference(100))
+	fmt.Printf("Problem 6: Difference Between Square of Sum And Sum Of Squares From 1 to 100 = %d\n", SumSquareDifference(100))
 	fmt.Printf("Problem 7: The 10001th Prime Number = %d\n", NthPrimeNumber(10001))
+	fmt.Printf("Problem 8: The Largest Product Of 13 Adjacent Digits in the Thousand Digit Number = %d\n", GreatestProductOfNDigits(13))
 }
