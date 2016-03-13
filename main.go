@@ -14,5 +14,5 @@ func main() {
 	multiple, _ := SmallestMultiple(1, 20)
 	fmt.Printf("Problem 5: Smallest Positive Number Evenly Divisible By All Numbers From 1 to 20 = %d\n", multiple)
 	fmt.Printf("Problem 6: Difference Between Square Of Sum And Sum Of Squares From 1 to 100 = %d\n", SumSquareDifference(100))
-
+	fmt.Printf("Problem 7: The 10001th Prime Number = %d\n", NthPrimeNumber(10001))
 }
