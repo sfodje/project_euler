@@ -16,4 +16,5 @@ func main() {
 	fmt.Printf("Problem 6: Difference Between Square of Sum And Sum Of Squares From 1 to 100 = %d\n", SumSquareDifference(100))
 	fmt.Printf("Problem 7: The 10001th Prime Number = %d\n", NthPrimeNumber(10001))
 	fmt.Printf("Problem 8: The Largest Product Of 13 Adjacent Digits in the Thousand Digit Number = %d\n", GreatestProductOfNDigits(13))
+	fmt.Printf("Problem 9: The Product of the Special Pythagorean Triplet = %d\n", int64(ProductOfSpecialPythTriplet(1000)))
 }

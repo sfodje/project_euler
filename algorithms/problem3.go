@@ -27,7 +27,7 @@ func isPrime(n int) bool {
 		return false
 	}
 	for i, j := n/2, 2; i > 2; i = n / j {
-		if n%i == 0 || n%(i+2) == 0 {
+		if n%i == 0 {
 			return false
 		}
 		j += 1
