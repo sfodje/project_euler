@@ -18,4 +18,5 @@ func main() {
 	fmt.Printf("Problem 8: The Largest Product Of 13 Adjacent Digits in the Thousand Digit Number = %d\n", GreatestProductOfNDigits(13))
 	fmt.Printf("Problem 9: The Product of the Special Pythagorean Triplet = %d\n", int64(ProductOfSpecialPythTriplet(1000)))
 	fmt.Printf("Problem 10: The Sum of All Prime Numbers Under 2,000,000 = %d\n", SumOfPrimes(2000000))
+	fmt.Printf("Problem 11: The Largest Product Of Four Adjacent Numbers In Grid = %d\n", GetMaxProduct(4))
 }
