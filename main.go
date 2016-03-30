@@ -57,5 +57,8 @@ func main() {
 		if i == 0 || i == 11 {
 			fmt.Printf("Problem 11: Largest product of 2 adjacent numbers in number grid = %d\n", GetMaxProduct(4))
 		}
+		if i == 0 || i == 12 {
+			fmt.Printf("Problem 12: Triangle number with more than 500 divisors = %d\n", TriangleNumberWithMoreThanNDivisors(500))
+		}
 	}
 }
