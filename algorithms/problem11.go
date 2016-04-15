@@ -27,7 +27,7 @@ const strGrid string = `08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48`
 
 func GetMaxProduct(n int) int {
-	return getMaxProduct(convertGrid(strGrid), n)
+	return getMaxProduct(convertGrid(strGrid, "\n ", " "), n)
 }
 
 func getMaxProduct(grid *[][]int, n int) int {
@@ -96,8 +96,8 @@ func maxProduct(array *[]int, n int) int {
 	return maxProduct
 }
 
-func convertGrid(strgrid string) *[][]int {
-	strgrid = strings.Trim(strgrid, "\n ")
+func convertGrid(strgrid, sep1, sep2 string) *[][]int {
+	strgrid = strings.Trim(strgrid, sep1)
 	if len(strgrid) == 0 {
 		return nil
 	}
@@ -105,7 +105,7 @@ func convertGrid(strgrid string) *[][]int {
 	rows := strings.Split(strgrid, "\n")
 	for i, row := range rows {
 		row = strings.Trim(row, " ")
-		values := strings.Split(row, " ")
+		values := strings.Split(row, sep2)
 		grid = append(grid, []int{})
 		for _, val := range values {
 			v, _ := strconv.Atoi(val)

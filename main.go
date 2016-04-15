@@ -60,5 +60,8 @@ func main() {
 		if i == 0 || i == 12 {
 			fmt.Printf("Problem 12: Triangle number with more than 500 divisors = %d\n", TriangleNumberWithMoreThanNDivisors(500))
 		}
+		if i == 0 || i == 13 {
+			fmt.Printf("Problem 13: The first 10 digits of the one-hundred 50-digit numbers = %d\n", FirstNthDigitsOfSum(10))
+		}
 	}
 }

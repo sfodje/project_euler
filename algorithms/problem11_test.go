@@ -60,8 +60,8 @@ func TestConvertGrid(t *testing.T) {
 	}
 
 	for _, data := range testData {
-		if result := convertGrid(data.strgrid); !reflect.DeepEqual(result, data.expectedResult) {
-			t.Errorf("convertGrid(%s) failed. Expected result %v. Got result %v", data.strgrid, data.expectedResult, result)
+		if result := convertGrid(data.strgrid, "\n ", " "); !reflect.DeepEqual(result, data.expectedResult) {
+			t.Errorf("convertGrid(%s, \"\\n \", \" \") failed. Expected result %v. Got result %v", data.strgrid, data.expectedResult, result)
 		}
 	}
 }
